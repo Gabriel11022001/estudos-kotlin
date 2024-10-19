@@ -31,4 +31,19 @@ fun main() {
     clientes.forEach { clienteNome ->
         println(clienteNome)
     }
+
+    // concatenar strings
+    val primeiroNome = "Gabriel"
+    val sobrenome = "Rodrigues"
+    val nomeCompleto = primeiroNome + " " + sobrenome
+    println("nome completo: " + nomeCompleto)
+
+    // também posso concatenar da seguinte forma
+    val endereco = "Rua Brasil"
+    val bairro = "Bairro das flores"
+    val numero = "123"
+    val cidade = "Bastos"
+    val estado = "SP"
+    val enderecoCompleto = "$endereco, $bairro, $numero, $cidade - $estado"
+    println(enderecoCompleto)
 }
